@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Zoo</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f58021">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  @include('pages/header.html')
+  <main class="page">
+    @include('pages/hero.html')
+    @include('pages/welcome.html')
+    @include('pages/donation.html')
+    @include('pages/pets.html')
+    @include('pages/pay.html')
+    @include('pages/testimonial.html')
+    @include('pages/care.html')
+    @include('pages/touch.html')
+  </main>
+  @include('pages/footer.html')
+  @include('pages/modal.html')
+  <script src="js/index.js"></script>
+</body>
+
+</html>

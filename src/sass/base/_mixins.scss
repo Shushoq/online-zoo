@@ -1,0 +1,62 @@
+@mixin font-face($font-family, $url, $weight) {
+  @font-face {
+    font-family: "#{$font-family}";
+    src: url("../assets/fonts/#{$url}.woff2") format("woff2"),
+      url("../#{$url}.woff") format("woff");
+    font-weight: #{$weight};
+    font-display: swap;
+    font-style: normal;
+  }
+}
+
+@mixin breakpoint($point) {
+  @if $point==xxl {
+    @media (max-width: $xxl) {
+      @content;
+    }
+  } @else if $point==xl {
+    @media (max-width: $xl) {
+      @content;
+    }
+  } @else if $point==lg {
+    @media (max-width: $lg) {
+      @content;
+    }
+  } @else if $point==lgs {
+    @media (max-width: $lgs) {
+      @content;
+    }
+  } @else if $point==md {
+    @media (max-width: $md) {
+      @content;
+    }
+  } @else if $point==mds {
+    @media (max-width: $mds) {
+      @content;
+    }
+  } @else if $point==sm {
+    @media (max-width: $sm) {
+      @content;
+    }
+  } @else if $point==sms {
+    @media (max-width: $sms) {
+      @content;
+    }
+  } @else if $point==xs {
+    @media (max-width: $xs) {
+      @content;
+    }
+  } @else if $point==hover {
+    @media (min-width: 961px) {
+      @content;
+    }
+  }
+}
+
+@mixin transition($args...) {
+  -webkit-transition: $args;
+  -moz-transition: $args;
+  -ms-transition: $args;
+  -o-transition: $args;
+  transition: $args;
+}

@@ -1,0 +1,137 @@
+.welcome {
+  padding: $spacing-p 0;
+  @include breakpoint(lg) {
+    padding: 100px 0 98px;
+  }
+  @include breakpoint(xs) {
+    padding-top: 50px;
+    padding-bottom: 48px;
+  }
+  &__container {
+    @include breakpoint(lg) {
+      max-width: 1030px;
+    }
+    @include breakpoint(sm) {
+      padding: 0;
+    }
+  }
+  &__content {
+    display: flex;
+    @include breakpoint(lg) {
+      flex-wrap: wrap;
+    }
+    &:nth-child(2n) {
+      flex-direction: row-reverse;
+      margin-top: $spacing-p;
+      @include breakpoint(lg) {
+        justify-content: flex-start;
+        flex-direction: row;
+        max-width: 660px;
+        margin-top: 73px;
+        margin-left: auto;
+      }
+      @include breakpoint(mds) {
+        max-width: 100%;
+      }
+      @include breakpoint(sm) {
+        margin-top: 46px;
+      }
+      @include breakpoint(xs) {
+        margin-top: 44px;
+      }
+      .welcome__right {
+        height: 531px;
+        @include breakpoint(mds) {
+          flex-basis: 100%;
+        }
+        @include breakpoint(sm) {
+          height: 425px;
+        }
+        @include breakpoint(xs) {
+          height: 213px;
+        }
+      }
+      .welcome__left {
+        margin-left: 40px;
+        margin-right: 0;
+        margin-top: 0;
+        @include breakpoint(lg) {
+          margin: 0;
+          margin-top: -18px;
+        }
+        @include breakpoint(sm) {
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+        @include breakpoint(xs) {
+          margin-left: 10px;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  &__left {
+    margin-right: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: -18px;
+    @include breakpoint(lg) {
+      max-width: 560px;
+      margin-right: 0;
+    }
+    @include breakpoint(sm) {
+      max-width: 100%;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    @include breakpoint(xs) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
+  &__text {
+    span {
+      @include breakpoint(xs) {
+        display: none;
+      }
+    }
+  }
+  &__right {
+    flex: 0 0 800px;
+    max-height: 531px;
+    overflow: hidden;
+    @include breakpoint(lg) {
+      order: -1;
+      flex-basis: 660px;
+      max-height: 438px;
+      margin-bottom: 50px;
+    }
+    @include breakpoint(mds) {
+      flex-basis: 100%;
+    }
+    @include breakpoint(sm) {
+      height: 438px;
+    }
+    @include breakpoint(xs) {
+      height: 218px;
+    }
+  }
+  &__img {
+    border-radius: 5px;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  &__title {
+    margin-bottom: $spacing;
+    @include breakpoint(lg) {
+      margin-bottom: 31px;
+    }
+    @include breakpoint(xs) {
+      font-size: 26px;
+      margin-bottom: 25px;
+    }
+  }
+}

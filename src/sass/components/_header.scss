@@ -1,0 +1,69 @@
+.header {
+  height: $height-header;
+  background-color: var(--color-accent);
+  @include breakpoint(sm) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  &__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include breakpoint(lg) {
+      max-width: 1030px;
+    }
+    @include breakpoint(sm) {
+      padding: 0;
+      max-width: 94%;
+    }
+    @include breakpoint(xs) {
+      max-width: 88%;
+    }
+  }
+
+  &__logo {
+    margin-right: auto;
+  }
+
+  &__burger {
+    @include breakpoint(xs) {
+      margin-right: 13px;
+    }
+  }
+
+  &__nav {
+    margin-right: 67px;
+    @include breakpoint(lg) {
+      margin-right: 80px;
+    }
+    @include breakpoint(md) {
+      margin-right: 0;
+    }
+    @include breakpoint(sm) {
+      position: fixed;
+      right: 0; 
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transform: translateX(100%);
+      width: 311px;
+      height: 754px;
+      background-color: var(--color-secondary);
+      transition: transform 0.3s ease-in;
+      margin-right: 0;
+      z-index: 100;
+    }
+    @include breakpoint(xs) {
+      width: 233px;
+      height: 600px;
+    }
+  }
+}

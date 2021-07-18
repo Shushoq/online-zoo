@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Zoo</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#f58021">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="../css/style.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container container">
+      <h1 class="visually-hidden">Online Zoo</h1>
+      <a href="../index.html" class="header__logo logo">
+        <svg class="logo__img logo__img_dark">
+          <use xlink:href="../assets/img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <nav class="header__nav nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../index.html" class="nav__link nav__link_dark">About</a></li>
+          <li class="nav__item"><a href="../map.html" class="nav__link nav__link_dark">Map</a></li>
+          <li class="nav__item"><a href="#" class="nav__link nav__link_dark nav__link_active">Zoos</a></li>
+          <li class="nav__item"><a href="../contacts.html" class="nav__link nav__link_dark">Contact us</a></li>
+          <li class="nav__item"><a href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"
+              class="nav__link nav__link_dark" target="_blank">Design</a></li>
+        </ul>
+      </nav>
+      <ul class="header__social social">
+        <li class="social__item">
+          <a href="https://www.youtube.com/" class="social__link social__link_youtube" target="_blank">
+            <svg class="social__img social__img_youtube">
+              <use xlink:href="../assets/img/sprite.svg#youtube"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://instagram.com/" class="social__link social__link_instagram" target="_blank">
+            <svg class="social__img social__img_instagram">
+              <use xlink:href="../assets/img/sprite.svg#instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a href="https://www.facebook.com/" class="social__link social__link_facebook" target="_blank">
+            <svg class="social__img social__img_facebook">
+              <use xlink:href="../assets/img/sprite.svg#facebook"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="header__burger burger">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+
+    <section class="cams">
+
+      <div class="sticky">
+        <aside class="sidebar">
+          <div class="sidebar__top">
+            <span class="sidebar__tag">LIVE
+              <svg>
+                <use xlink:href="../assets/img/sprite.svg#cam"></use>
+              </svg>
+            </span>
+            <button class="sidebar__button">
+              <svg>
+                <use xlink:href="../assets/img/sprite.svg#sidebar"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="sidebar__list">
+            <div class="sidebar__list-view">
+              <li class="sidebar__item">
+                <div class="sidebar__circle sidebar__circle_active">
+                  <a href="./alligator.html" class="sidebar__link sidebar__link_active"
+                    data-tooltip="The Chinese Alligator from USA">
+                    <svg class="sidebar__img sidebar__img_active sidebar__img_alligator">
+                      <use xlink:href="../assets/img/sprite.svg#alligator"></use>
+                    </svg>
+                  </a>
+                  <p class="sidebar__text text">
+                    Watch the Chinese Alligator from China
+                  </p>
+              </li>
+              <li class="sidebar__item">
+                <div class="sidebar__circle"></div>
+                <a href="./tiger.html" class="sidebar__link" data-tooltip="The Sumatran tiger from Indonesia">
+                  <svg class="sidebar__img sidebar__img_tiger">
+                    <use xlink:href="../assets/img/sprite.svg#tiger"></use>
+                  </svg>
+                </a>
+                <p class="sidebar__text text">
+                  Watch the Sumatran tiger from Indonesia
+                </p>
+              </li>
+              <li class="sidebar__item">
+                <div class="sidebar__circle"></div>
+                <a href="./lion.html" class="sidebar__link" data-tooltip="The African Lion from Africa">
+                  <svg class="sidebar__img sidebar__img_lion">
+                    <use xlink:href="../assets/img/sprite.svg#lion"></use>
+                  </svg>
+                </a>
+                <p class="sidebar__text text">
+                  Watch the African Lion from Africa
+                </p>
+              </li>
+              <li class="sidebar__item">
+                <div class="sidebar__circle"></div>
+                <a href="./koala.html" class="sidebar__link" data-tooltip="The Australian Koala from Australia">
+                  <svg class="sidebar__img sidebar__img_koala">
+                    <use xlink:href="../assets/img/sprite.svg#koala"></use>
+                  </svg>
+                </a>
+                <p class="sidebar__text text">
+                  Watch the Australian Koala from Australia
+                </p>
+              </li>
+            </div>
+            <div class="sidebar__list-view sidebar__list-view_hidden">
+              <li class="sidebar__item">
+                <div class="sidebar__circle"></div>
+                <a href="./eagle.html" class="sidebar__link" data-tooltip="The Bald Eagles Nest from West Mexico">
+                  <svg class="sidebar__img sidebar__img_eagle">
+                    <use xlink:href="../assets/img/sprite.svg#eagle"></use>
+                  </svg>
+                </a>
+                <p class="sidebar__text text">
+                  Watch The Bald Eagles Nest from West End cam
+                </p>
+              </li>
+              <li class="sidebar__item">
+                <div class="sidebar__circle"></div>
+                <a href="./gorilla.html" class="sidebar__link"
+                  data-tooltip="Gorilla from Gorilla Forest Corridor from Chad">
+                  <svg class="sidebar__img sidebar__img_gorilla">
+                    <use xlink:href="../assets/img/sprite.svg#gorilla"></use>
+                  </svg>
+                </a>
+                <p class="sidebar__text text">
+                  Livestream from Gorilla Forest Corridor habitat cam
+                </p>
+              </li>
+              <li class="sidebar__item">
+                <div class="sidebar__circle"></div>
+                <a href="./lemur.html" class="sidebar__link"
+                  data-tooltip="The ring-tailed Lemur from Madagascar, Lemuria Land">
+                  <svg class="sidebar__img sidebar__img_lemur">
+                    <use xlink:href="../assets/img/sprite.svg#lemur"></use>
+                  </svg>
+                </a>
+                <p class="sidebar__text text">
+                  The ring-tailed lemurs play in Madagascar, Lemuria Land
+                </p>
+              </li>
+              <li class="sidebar__item">
+                <div class="sidebar__circle"></div>
+                <a href="./panda.html" class="sidebar__link" data-tooltip="Panda from China's Panda Center">
+                  <svg class="sidebar__img sidebar__img_panda">
+                    <use xlink:href="../assets/img/sprite.svg#panda"></use>
+                  </svg>
+                </a>
+                <p class="sidebar__text text">
+                  Watch live from China's Panda Center
+                </p>
+              </li>
+            </div>
+          </ul>
+          <div class="sidebar__bottom">
+            <button class="sidebar__more">
+              <svg>
+                <use xlink:href="../assets/img/sprite.svg#more"></use>
+              </svg>
+            </button>
+          </div>
+        </aside>
+      </div>
+
+      <div class="cams__container container">
+        <div class="cams__top">
+          <h2 class="cams__title title">Alligators cams</h2>
+          <button class="cams__button button button_accent">
+            donate now
+            <svg class="button__img button__img_ml">
+              <use xlink:href="../assets/img/sprite.svg#arrow-right"></use>
+            </svg>
+          </button>
+          <div class="cams__inner">
+            <div class="cams__overlay">
+              <span class="cams__tag cams__tag_big">Alligator Mike cam 1</span>
+              <button class="cams__play">
+                <svg class="cams__img">
+                  <use xlink:href="../assets/img/sprite.svg#play"></use>
+                </svg>
+              </button>
+            </div>
+            <iframe class="cams__iframe" width="560" height="315"
+              src="https://www.youtube.com/embed/DrnFuhrczyw?controls=0&showinfo=0&modestbranding=0" title=" YouTube
+              video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <div class="cams__bottom">
+          <h3 class="cams__subtitle">More live views </h3>
+          <div class="cams__wrapper">
+            <button class="cams__left button button__prev button_secondary">
+              <svg class="button__img button__img_right button__img_secondary">
+                <use xlink:href="../assets/img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+            <ul class="cams__grid">
+              <li class="cams__item cams__item_active">
+                <div class="cams__overlay">
+                  <span class="cams__tag cams__tag_small">Cam 1
+                    <svg>
+                      <use xlink:href="../assets/img/sprite.svg#cam"></use>
+                    </svg>
+                  </span>
+                  <button class="cams__play">
+                    <svg class="cams__img">
+                      <use xlink:href="../assets/img/sprite.svg#play"></use>
+                    </svg>
+                  </button>
+                </div>
+                <iframe class="cams__iframe-small" src="https://www.youtube.com/embed/DrnFuhrczyw"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </li>
+              <li class="cams__item">
+                <div class="cams__overlay">
+                  <span class="cams__tag cams__tag_small">Cam 2
+                    <svg>
+                      <use xlink:href="../assets/img/sprite.svg#cam"></use>
+                    </svg>
+                  </span>
+                  <button class="cams__play">
+                    <svg class="cams__img">
+                      <use xlink:href="../assets/img/sprite.svg#play"></use>
+                    </svg>
+                  </button>
+                </div>
+                <iframe class="cams__iframe-small" src="https://www.youtube.com/embed/DrnFuhrczyw"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </li>
+              <li class="cams__item">
+                <div class="cams__overlay">
+                  <span class="cams__tag cams__tag_small">Cam 3
+                    <svg>
+                      <use xlink:href="../assets/img/sprite.svg#cam"></use>
+                    </svg>
+                  </span>
+                  <button class="cams__play">
+                    <svg class="cams__img">
+                      <use xlink:href="../assets/img/sprite.svg#play"></use>
+                    </svg>
+                  </button>
+                </div>
+                <iframe class="cams__iframe-small" src="https://www.youtube.com/embed/DrnFuhrczyw"
+                  title="YouTube video player" frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </li>
+            </ul>
+            <button class="cams__right button button__next button_secondary">
+              <svg class="button__img button__img_secondary">
+                <use xlink:href="../assets/img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="donation">
+      <div class="donation__container container">
+        <div class="donation__left">
+          <h3 class="donation__title">Make a difference for the alligators!</h3>
+          <p class="donation__text donation__text_mw text">lligators mate in June. Males may fertilize several females
+            in one mating season, , according to the University of Michigan Museum of Zoology. Females are known to have
+            only one mate each season.</p>
+        </div>
+        <form action="#" class="donation__form form-donation form">
+          <span class="form-donation__text">Quick Donate</span>
+          <div class="form-donation__content">
+            <input class="form-donation__input" type="number" name="donation" id="donation"
+              placeholder="Donation Amount">
+            <button class="form-donation__button">
+              <svg class="form-donation__img">
+                <use xlink:href="../assets/img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="know">
+      <div class="know__container container">
+        <div class="know__top">
+          <h2 class="know__title">Did you know?</h2>
+          <h3 class="know__subtitle subtitle">Alligators are large reptiles, members of the order Crocodylia. Alligators
+            and crocodiles are, therefore, closely related, and people often confuse one with the other; however, these
+            two reptiles are very different. </h3>
+        </div>
+        <div class="know__bottom">
+          <ul class="know__info">
+            <li class="know__item">
+              <span class="know__name">Common name:</span>
+              <span class="know__prop">Alligator
+              </span>
+            </li>
+            <li class="know__item">
+              <span class="know__name">Scientific name:</span>
+              <span class="know__prop">Alligator mississippiensis
+              </span>
+            </li>
+            <li class="know__item">
+              <span class="know__name">Type:</span>
+              <span class="know__prop">Alligator
+              </span>
+            </li>
+            <li class="know__item">
+              <span class="know__name">Size:</span>
+              <span class="know__prop">Measure 3.4 to 4.6 m (11.2 to 15.1 ft) in length
+              </span>
+            </li>
+            <li class="know__item">
+              <span class="know__name">Diet:</span>
+              <span class="know__prop">Carnivore
+              </span>
+            </li>
+            <li class="know__item">
+              <span class="know__name">Habitat:</span>
+              <span class="know__prop">American alligators live in freshwater environments</span>
+            </li>
+            <li class="know__item">
+              <span class="know__name">Range:</span>
+              <span class="know__prop">Continental United States</span>
+              <a href="../map.html" class="know__button button button_accent-t">VIEW map
+                <svg class="button__img button__img_ml button__img_accent">
+                  <use xlink:href="../assets/img/sprite.svg#arrow-right"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="know__img">
+            <img src="../assets/img/zoos/alligator.jpg" alt="Alligator">
+          </div>
+          <p class="know__text text">The American alligator lives in the southern United States, from North Carolina to
+            Texas, according to the Smithsonian Zoo. These gators can be found in slow-moving rivers, ponds, lakes and
+            swamps. Chinese alligators live in eastern China, and they are confined to a small area in the Yangtze River
+            basin
+            near the Pacific Ocean, according to the Saint Louis Zoo. They are traditionally found in rivers, lakes,
+            ponds and swamps, but are now confined mostly to ditches and ponds on agricultural land. Much of their
+            habitat has been converted to rice paddies.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__container container">
+      <div class="footer__top">
+        <div class="footer__links">
+          <a href="../index.html" class="footer__logo logo" title="Online Zoo">
+            <svg class="logo__img logo__img_light">
+              <use xlink:href="../assets/img/sprite.svg#logo"></use>
+            </svg>
+          </a>
+          <div class="footer__partner" title="Yem Digital">
+            <svg class="footer__partner-img">
+              <use xlink:href="../assets/img/sprite.svg#partner"></use>
+            </svg>
+          </div>
+
+        </div>
+        <nav class="footer__nav nav">
+          <ul class="nav__list nav__list_item">
+            <li class="nav__item nav__item_footer"><a href="../index.html" class="nav__link nav__link_light">About</a>
+            </li>
+            <li class="nav__item nav__item_footer"><a href="../map.html" class="nav__link nav__link_light">Map</a></li>
+            <li class="nav__item nav__item_footer"><a href="./panda.html" class="nav__link nav__link_light">Zoos</a>
+            </li>
+            <li class="nav__item nav__item_footer"><a href="../contacts.html" class="nav__link nav__link_light">Contact
+                us</a></li>
+          </ul>
+        </nav>
+        <button class="footer__button button button_transparent">
+          donate for volunteers
+          <svg class="button__img button__img_ml">
+            <use xlink:href="../assets/img/sprite.svg#arrow-right"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="footer__bottom">
+        <ul class="footer__copyright">
+          <li class="footer__item">© 2021 DinaK </li>
+          <li class="footer__item">© Yem Digital </li>
+
+        </ul>
+        <ul class="footer__social social">
+          <li class="social__item social__item_footer">
+            <a href="https://www.youtube.com/" class="social__link social__link_youtube" target="_blank">
+              <svg class="social__img social__img_youtube">
+                <use xlink:href="../assets/img/sprite.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item_footer">
+            <a href="https://instagram.com/" class="social__link social__link_instagram" target="_blank">
+              <svg class="social__img social__img_instagram">
+                <use xlink:href="../assets/img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item social__item_footer">
+            <a href="https://www.facebook.com/" class="social__link social__link_facebook" target="_blank">
+              <svg class="social__img social__img_facebook">
+                <use xlink:href="../assets/img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </footer>
+
+  <div class="modal" data-modal>
+    <div class="modal__container">
+      <div class="modal__content">
+        <div class="modal__top">
+          <img src="../assets/img/modal-bg.jpg" alt="Hand">
+        </div>
+        <div class="modal__close">
+          <svg class="modal__icon">
+            <use xlink:href="../assets/img/sprite.svg#modal-close"></use>
+          </svg>
+        </div>
+        <div class="modal__bottom">
+          <h2 class="modal__title">together we care, save and protect!</h2>
+          <p class="modal__text">Your most generous gift not only cares for countless animals, but it also offers hope
+            and
+            a
+            vital lifeline to the world’s most endangered wildlife relying on us to survive.</p>
+          <div class="modal__buttons">
+            <button class="modal__button" data-value="20">$20</button>
+            <button class="modal__button" data-value="30">$30</button>
+            <button class="modal__button" data-value="50">$50</button>
+            <button class="modal__button" data-value="80">$80</button>
+            <button class="modal__button" data-value="100">$100</button>
+            <button class="modal__button" data-value="">Other amount</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal1" data-modal>
+    <div class="modal1__container">
+      <div class="modal1__content">
+        <div class="modal1__top">
+          <h2 class="modal1__title">make your donation</h2>
+        </div>
+        <div class="modal1__info">
+          <h3 class="modal1__subtitle">Donation information:</h3>
+        </div>
+
+        <form action="" class="modal1__body">
+          <div class="modal1__mid">
+            <div class="modal1__buttons">
+              <p class="modal1__text"><span>*</span> Choose your donation amount:</p>
+              <button class="modal1__button" data-value="10">$10</button>
+              <button class="modal1__button" data-value="20">$20</button>
+              <button class="modal1__button" data-value="30">$30</button>
+              <button class="modal1__button" data-value="50">$50</button>
+              <button class="modal1__button" data-value="80">$80</button>
+              <button class="modal1__button" data-value="100">$100</button>
+            </div>
+            <div class="modal1__inputs">
+              <div class="modal1__number">
+                <label for="number">Other amount</label>
+                <input id="number" type="number">
+              </div>
+              <div class="modal1__select-group">
+                <label for="select">for special pet</label>
+                <div class="modal1__select">
+                  <select name="select" id="select">
+                    <option value="All" class="modal1__option" selected disabled hidden>Choose your favourite</option>
+                    <option value="Panda">Lukas the Panda</option>
+                    <option value="Lemur">Andy the Lemur</option>
+                    <option value="Gorilla">Glen the Gorilla</option>
+                    <option value="Alligator">Mike the Alligator</option>
+                    <option value="Eagles">Sam & Lora the eagles family</option>
+                    <option value="Koala">Liz the Koala</option>
+                    <option value="Lion">Shake the Lion</option>
+                    <option value="Tiger">
+                      Senja the Tiger</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="modal1__checkbox-group">
+              <input class="modal1__checkbox" type="checkbox" id="checkbox">
+              <label class="modal1__label " for="checkbox"> Make this a monthly recurring gift</label>
+            </div>
+          </div>
+          <div class="modal1__bottom">
+            <div class="modal1__pagination">
+              <span class="modal1__dot modal1__dot_active"></span>
+              <span class="modal1__dot"></span>
+              <span class="modal1__dot"></span>
+            </div>
+            <button class="modal1__btn modal1__btn_next button button_contact">
+              Next
+              <svg class="button__img button__img_ml">
+                <use xlink:href="../assets/img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal2" data-modal>
+    <div class="modal2__container">
+      <div class="modal2__content">
+        <div class="modal2__top">
+          <h2 class="modal2__title">make your donation</h2>
+        </div>
+        <div class="modal2__info">
+          <h3 class="modal2__subtitle">Billing Information::</h3>
+        </div>
+        <form class="modal2__body">
+          <div class="modal2__mid">
+            <div class="modal2__inputs">
+              <label for="yourname"><span>*</span> Your Name <strong>or you can make an anonymous
+                  donation</strong></label>
+              <input id="yourname" type="text" placeholder="First and last name" required>
+            </div>
+            <div class="modal2__inputs">
+              <label for="youremail"><span>*</span> Your Email Address</label>
+              <input id="youremail" type="email" placeholder="Enter your email" required>
+            </div>
+            <p class="modal2__text">
+              You will receive emails from the Online Zoo, including updates and news on the latest discoveries and
+              translations. You can unsubscribe at any time.
+            </p>
+          </div>
+          <div class="modal2__bottom">
+            <div class="modal2__pagination">
+              <span class="modal2__dot modal2__dot_active"></span>
+              <span class="modal2__dot modal2__dot_active"></span>
+              <span class="modal2__dot"></span>
+            </div>
+            <button class="modal2__back">
+              Back
+            </button>
+            <button class="modal2__btn modal2__btn_next button button_contact">
+              Next
+              <svg class="button__img button__img_ml">
+                <use xlink:href="../assets/img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal3" data-modal>
+    <div class="modal3__container">
+      <div class="modal3__content">
+        <div class="modal3__top">
+          <h2 class="modal3__title">make your donation</h2>
+        </div>
+        <div class="modal3__info">
+          <h3 class="modal3__subtitle">Payment Information:</h3>
+        </div>
+        <form class="modal3__body">
+          <div class="modal3__mid">
+            <div class="modal3__group">
+              <div class="modal3__inputs">
+                <label for="card"><span>*</span> Credit Card Number</label>
+                <input id="card" type="text" required pattern="[0-9]{4} [0-9]{4} [0-9]{4} [0-9]{4}">
+              </div>
+              <div class="modal3__inputs">
+                <label for="cvv"><span>*</span> CVV Number</label>
+                <input id="cvv" type="text" required pattern="[0-9]{3}">
+              </div>
+            </div>
+            <div class="modal3__selects">
+              <div class=" modal3__select-group">
+                <div><span>*</span> Expiration Date</div>
+                <div class="modal3__select modal3__select_month">
+                  <select name="select" id="month" required>
+                    <option selected value="">Month</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                  </select>
+                </div>
+              </div>
+              <div class="modal3__select-group">
+                <div class="modal3__select modal3__select_year">
+                  <select name="select" id="year" required>
+                    <option selected value="">Year</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal3__bottom">
+            <div class="modal3__pagination">
+              <span class="modal3__dot modal3__dot_active"></span>
+              <span class="modal3__dot modal3__dot_active"></span>
+              <span class="modal3__dot modal3__dot_active"></span>
+            </div>
+            <button class="modal3__back">
+              Back
+            </button>
+            <button class="modal3__btn modal1__btn_next button button_accent">
+              complete donation
+              <svg class="button__img button__img_ml">
+                <use xlink:href="../assets/img/sprite.svg#arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal5" data-modal>
+    <div class="modal5__container">
+      <div class="modal5__content">
+        <div class="modal5__top">
+          <img src="../assets/img/modal-bg.jpg" alt="Hand">
+        </div>
+        <div class="modal__close">
+          <svg class="modal5__icon">
+            <use xlink:href="../assets/img/sprite.svg#modal-close"></use>
+          </svg>
+        </div>
+        <div class="modal5__bottom">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/index.js"></script>
+</body>
+
+</html>
