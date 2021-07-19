@@ -16,7 +16,8 @@
 
 - JavaScript
 - HTML
-- СSS
+- CSS
+- SASS
 - Gulp
 
 ## Build setup
